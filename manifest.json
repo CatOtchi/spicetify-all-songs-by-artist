@@ -1,6 +1,6 @@
 {
-  "name": "Artist Catalog",
-  "description": "Add an artist's tracks to an existing or new playlist with Spotify's native playlist picker.",
+  "name": "All Songs by Artist",
+  "description": "Add all artist tracks to a playlist. Collect a full discography, including albums, singles, and optional guest appearances, with Spotify's native playlist picker.",
   "preview": "preview.svg",
   "main": "artistCatalog.js",
   "readme": "README.md",
@@ -12,8 +12,12 @@
     }
   ],
   "tags": [
-    "artist",
+    "all songs",
+    "all artist tracks",
+    "artist to playlist",
     "discography",
+    "albums",
+    "singles",
     "playlist"
   ]
 }

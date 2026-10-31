@@ -1,4 +1,4 @@
-// NAME: Artist Catalog
+// NAME: All Songs by Artist
 // DESCRIPTION: Add an artist's complete available catalog using Spotify's own playlist menu.
 // VERSION: 1.0.2
 // LICENSE: MIT
@@ -12,7 +12,7 @@
     const R = S.React;
     const h = R.createElement;
     const chunks = window.rspackChunk || window.rspackChunkclient_web || window.webpackChunkclient_web;
-    if (!chunks) return S.showNotification("Artist Catalog: Spotify's module loader is unavailable.", true);
+    if (!chunks) return S.showNotification("All Songs by Artist: Spotify's module loader is unavailable.", true);
     const require = chunks.push([[Symbol("artist-catalog")], {}, loader => loader]);
     let artistChunk;
 
@@ -35,7 +35,7 @@
         await artistChunk;
         result = loadDefinition();
       }
-      if (!result) throw new Error(`Spotify no longer exposes ${name}. Update Artist Catalog.`);
+      if (!result) throw new Error(`Spotify no longer exposes ${name}. Update All Songs by Artist.`);
       return result;
     }
 
@@ -51,7 +51,7 @@
         const source = factory.toString();
         return source.includes('focusTransferKey:"ADD_TO_PLAYLIST_SUBMENU"') && source.includes("contextmenu.add-to-playlist");
       });
-      if (matches.length !== 1) throw new Error("Spotify's native playlist menu changed. Update Artist Catalog.");
+      if (matches.length !== 1) throw new Error("Spotify's native playlist menu changed. Update All Songs by Artist.");
       const exports = Object.values(require(matches[0][0]));
       if (exports.length !== 1 || typeof exports[0] !== "function") throw new Error("Spotify's playlist menu is unavailable.");
       return exports[0];
@@ -140,7 +140,7 @@
         } catch (error) {
           if (error.name !== "AbortError") {
             setState({ kind: "error", message: error.message });
-            S.showNotification(`Artist Catalog: ${error.message}`, true);
+            S.showNotification(`All Songs by Artist: ${error.message}`, true);
           }
         } finally {
           jobs.delete(artistUri);
@@ -200,7 +200,7 @@
     });
   }
   main().catch(error => {
-    console.error("[Artist Catalog] Initialization failed", error);
-    window.Spicetify?.showNotification("Artist Catalog could not initialize. See the developer console.", true);
+    console.error("[All Songs by Artist] Initialization failed", error);
+    window.Spicetify?.showNotification("All Songs by Artist could not initialize. See the developer console.", true);
   });
 })();

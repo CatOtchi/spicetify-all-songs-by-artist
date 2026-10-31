@@ -1,6 +1,6 @@
-# Artist Catalog
+# All Songs by Artist
 
-Add an artist's tracks to an existing or new playlist using Spotify's own playlist picker.
+Add all songs by an artist to an existing or new playlist. Collect their full discography, with optional guest appearances.
 
 ## Use
 
@@ -8,13 +8,13 @@ Add an artist's tracks to an existing or new playlist using Spotify's own playli
 2. Choose whether to **Include guest appearances**, then click **Collect all artist tracks**. Keep the menu open.
 3. Return to the main menu → **Add to playlist** → choose a playlist or **New playlist**.
 
-Guest appearances includes credited tracks on other artists' releases.
+Guest appearances include credited tracks on other artists' releases.
 
 ## Install
 
-Search **Artist Catalog** in Spicetify Marketplace.
+Search **All Songs by Artist** in Spicetify Marketplace.
 
-For manual installation, download [artistCatalog.js](https://raw.githubusercontent.com/CatOtchi/spicetify-artist-catalog/main/artistCatalog.js) into your Spicetify `Extensions` folder, then run:
+For manual installation, download [artistCatalog.js](https://raw.githubusercontent.com/CatOtchi/spicetify-all-songs-by-artist/main/artistCatalog.js) into your Spicetify `Extensions` folder, then run:
 
 ```sh
 spicetify config extensions artistCatalog.js

@@ -3,7 +3,7 @@
   <circle cx="850" cy="60" r="220" fill="#1db954" opacity=".07"/>
   <g font-family="Segoe UI,Arial,sans-serif">
     <text x="64" y="108" fill="#1ed760" font-size="18" font-weight="700" letter-spacing="3">SPICETIFY EXTENSION</text>
-    <text x="60" y="186" fill="#fff" font-size="66" font-weight="750">Artist Catalog</text>
+    <text x="60" y="186" fill="#fff" font-size="66" font-weight="750">All Songs by Artist</text>
     <text x="64" y="235" fill="#b3b3b3" font-size="25">An artist's tracks. Your playlist.</text>
     <rect x="64" y="293" width="330" height="172" rx="16" fill="#242424"/>
     <circle cx="110" cy="337" r="12" fill="none" stroke="#1ed760" stroke-width="3"/>
