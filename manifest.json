@@ -1,0 +1,19 @@
+{
+  "name": "Artist Catalog",
+  "description": "Add an artist's tracks to an existing or new playlist with Spotify's native playlist picker.",
+  "preview": "preview.svg",
+  "main": "artistCatalog.js",
+  "readme": "README.md",
+  "branch": "main",
+  "authors": [
+    {
+      "name": "CatOtchi",
+      "url": "https://github.com/CatOtchi"
+    }
+  ],
+  "tags": [
+    "artist",
+    "discography",
+    "playlist"
+  ]
+}
